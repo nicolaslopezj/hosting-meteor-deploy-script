@@ -2,6 +2,13 @@
 
 set -e
 
+# Create SWAP memory
+sudo fallocate -l 1G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo swapon --show
+
 # Install things
 sudo apt-get update
 sudo apt-get install build-essential -y
