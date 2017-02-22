@@ -1,13 +1,6 @@
 #!/bin/sh
 
-set -e
-
-# Create SWAP memory
-sudo fallocate -l 1G /meteordeployswapfile
-sudo chmod 600 /meteordeployswapfile
-sudo mkswap /meteordeployswapfile
-sudo swapon /meteordeployswapfile
-sudo swapon --show
+sh -x ~/script/createSwapMemory.sh
 
 # Install things
 sudo apt-get update
