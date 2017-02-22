@@ -1,3 +1,7 @@
+#!/bin/sh
+
+set -e
+
 # Install things
 sudo apt-get update
 sudo apt-get install build-essential -y
@@ -15,6 +19,8 @@ cd $APP_LOCATION # Add an if here
 meteor npm install
 
 # Build app
+export METEOR_PROFILE=100
+export METEOR_DEBUG_BUILD=1
 meteor build --directory ~/compiled --server-only
 
 # Go to compiled app
