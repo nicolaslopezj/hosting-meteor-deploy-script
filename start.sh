@@ -5,4 +5,4 @@ cd ~/compiled/bundle
 # Set port
 export PORT=80
 # Run app
-sudo -E meteor node main.js
+nohup sudo -E meteor node main.js > ~/app.log 2>&1&
