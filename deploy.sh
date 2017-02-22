@@ -3,10 +3,10 @@
 set -e
 
 # Create SWAP memory
-sudo fallocate -l 1G /swapfile
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
+sudo fallocate -l 1G /meteordeployswapfile
+sudo chmod 600 /meteordeployswapfile
+sudo mkswap /meteordeployswapfile
+sudo swapon /meteordeployswapfile
 sudo swapon --show
 
 # Install things
