@@ -2,7 +2,7 @@
 echo ""
 echo "====> Creating Swap memory de compile..."
 echo ""
-sh -x ~/script/createSwapMemory.sh
+sh ~/script/createSwapMemory.sh
 
 # Install things
 echo ""

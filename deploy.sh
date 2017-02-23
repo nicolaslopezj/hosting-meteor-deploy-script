@@ -8,13 +8,13 @@ cd $APP_LOCATION # Add an if here
 
 # Install NPM Deps
 echo ""
-echo "====> Project npm dependencies..."
+echo "====> Installing app npm dependencies..."
 echo ""
 meteor npm install
 
 # Build app
-export METEOR_PROFILE=100
-export METEOR_DEBUG_BUILD=1
+# export METEOR_PROFILE=100
+# export METEOR_DEBUG_BUILD=1
 echo ""
 echo "====> Building app..."
 echo ""
