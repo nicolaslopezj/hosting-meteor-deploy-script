@@ -1,4 +1,6 @@
 #!/bin/sh
+set -e
+
 echo ""
 echo "====> Creating Swap memory de compile..."
 echo ""
@@ -16,7 +18,6 @@ echo "====> Installing python2.7..."
 echo ""
 sudo apt-get install build-essential -y
 sudo apt-get install python2.7 -y
-export PYTHON="/usr/bin/python2.7"
 
 # Install Meteor
 echo ""

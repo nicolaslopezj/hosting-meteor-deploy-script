@@ -1,6 +1,7 @@
 #!/bin/sh
+set -e
 
-sh ~/script/prepare.sh
+sh -x ~/script/prepare.sh
 
 # Go to app folder
 cd app
@@ -10,6 +11,7 @@ cd $APP_LOCATION # Add an if here
 echo ""
 echo "====> Installing app npm dependencies..."
 echo ""
+export PYTHON="/usr/bin/python2.7"
 meteor npm install
 
 # Build app

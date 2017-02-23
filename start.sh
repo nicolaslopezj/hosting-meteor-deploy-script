@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 # Go to compiled app
 # cd ~/compiled/bundle
@@ -13,10 +14,10 @@ echo ""
 
 sudo docker run -d \
   --restart=always \
-  --env-file ~/t \
+  --env-file ~/env \
   -v ~/bundle:/bundle \
   -p 80:80 \
-  --name=meteor11 \
+  --name=meteor \
   abernix/meteord:base
 
 echo ""
