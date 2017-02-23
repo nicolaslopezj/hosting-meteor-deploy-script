@@ -14,7 +14,7 @@ echo ""
 
 sudo docker run -d \
   --restart=always \
-  --env-file ~/env \
+  --env-file ~/.env \
   -v ~/bundle:/bundle \
   -p 80:80 \
   --name=meteor \
