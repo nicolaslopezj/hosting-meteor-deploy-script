@@ -29,4 +29,4 @@ curl https://install.meteor.com/ | sh
 echo ""
 echo "====> Installing Docker..."
 echo ""
-sh -x ~/script/installDocker.sh
+sh ~/script/installDocker.sh

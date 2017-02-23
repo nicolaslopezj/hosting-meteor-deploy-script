@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-sh -x ~/script/prepare.sh
+sh ~/script/prepare.sh
 
 # Go to app folder
 cd app
