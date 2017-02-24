@@ -20,8 +20,9 @@ meteor npm install
 echo ""
 echo "====> Building app..."
 echo ""
+set -x
 meteor build --architecture=os.linux.x86_64 ~/bundle --server-only
-
+set +x
 echo ""
 echo "====> App built"
 echo ""
