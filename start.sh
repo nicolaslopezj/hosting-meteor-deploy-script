@@ -35,3 +35,9 @@ sudo docker logs meteor
 echo ""
 echo "====> App started"
 echo ""
+
+nohup sh ~/script/pipeLogs.sh >/dev/null 2>&1 &
+
+echo ""
+echo "====> Logs pipe created"
+echo ""
