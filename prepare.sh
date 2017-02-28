@@ -2,31 +2,31 @@
 set -e
 
 echo ""
-echo "====> Creating Swap memory de compile..."
+echo "====> Creating Swap memory for compilation..."
 echo ""
-sh ~/script/createSwapMemory.sh
+sh ~/script/createSwapMemory.sh > /dev/null
 
 # Install things
 echo ""
 echo "====> Updating apt registry..."
 echo ""
-sudo apt-get update
+sudo apt-get update > /dev/null
 
 # Install python
 echo ""
 echo "====> Installing python2.7..."
 echo ""
-sudo apt-get install build-essential -y
-sudo apt-get install python2.7 -y
+sudo apt-get install build-essential -y > /dev/null
+sudo apt-get install python2.7 -y > /dev/null
 
 # Install Meteor
 echo ""
 echo "====> Installing Meteor..."
 echo ""
-curl https://install.meteor.com/ | sh
+curl https://install.meteor.com/ 2>/dev/null | sh
 
 # Install docker
 echo ""
 echo "====> Installing Docker..."
 echo ""
-sh ~/script/installDocker.sh
+sh ~/script/installDocker.sh > /dev/null

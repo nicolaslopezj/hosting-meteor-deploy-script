@@ -16,9 +16,9 @@ sudo docker run -d \
   --restart=always \
   --env-file ~/.env \
   -v ~/bundle:/bundle \
-  -p 80:80 \
-  --name=meteor \
-  abernix/meteord:base
+  -p 801:801 \
+  --name=meteor244 \
+  abernix/meteord:base > /dev/null
 
 echo ""
 echo "====> Started abernix/meteord:base"
@@ -30,7 +30,7 @@ echo ""
 
 sleep 20s
 
-sudo docker logs meteor
+sudo docker logs meteor --tail=30
 
 echo ""
 echo "====> App started"
@@ -38,8 +38,8 @@ echo ""
 
 sleep 5s
 
-nohup sh ~/script/pipeLogs.sh >/dev/null 2>&1 &
-nohup sh ~/loggerDaemon.sh > log.txt 2>&1 &
+nohup sh ~/script/pipeLogs.sh > /dev/null 2>&1 &
+nohup sh ~/loggerDaemon.sh > /dev/null 2>&1 &
 
 echo ""
 echo "====> Logs started"

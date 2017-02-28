@@ -10,7 +10,7 @@ echo ""
 echo "====> Installing app npm dependencies..."
 echo ""
 export PYTHON="/usr/bin/python2.7"
-meteor npm install
+meteor npm install > /dev/null
 
 # Build app
 # export METEOR_PROFILE=100
@@ -18,9 +18,7 @@ meteor npm install
 echo ""
 echo "====> Building app..."
 echo ""
-set -x
 meteor build --architecture=os.linux.x86_64 ~/bundle --server-only
-set +x
 echo ""
 echo "====> App built"
 echo ""
