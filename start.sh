@@ -18,7 +18,8 @@ sudo docker run -d \
   -v ~/bundle:/bundle \
   -p 80:80 \
   --name=meteor \
-  abernix/meteord:base > /dev/null
+  --log-level=error \
+  abernix/meteord:base
 
 echo ""
 echo "====> Started abernix/meteord:base"
