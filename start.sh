@@ -18,7 +18,6 @@ sudo docker run -d \
   -v ~/bundle:/bundle \
   -p 80:80 \
   --name=meteor \
-  --log-level=error \
   abernix/meteord:base
 
 echo ""
