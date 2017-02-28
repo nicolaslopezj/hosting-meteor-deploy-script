@@ -16,8 +16,8 @@ sudo docker run -d \
   --restart=always \
   --env-file ~/.env \
   -v ~/bundle:/bundle \
-  -p 801:801 \
-  --name=meteor244 \
+  -p 80:80 \
+  --name=meteor \
   abernix/meteord:base > /dev/null
 
 echo ""
