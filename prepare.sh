@@ -23,6 +23,7 @@ sudo apt-get install python2.7 -y > /dev/null
 echo ""
 echo "====> Installing Meteor..."
 echo ""
+export HOME=/home/ubuntu
 curl https://install.meteor.com/ 2>/dev/null | sh
 
 # Install docker
