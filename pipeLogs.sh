@@ -1,6 +1,6 @@
 # This script passes the meteor app logs and puts then in the orion.hosting app.log file
 while true; do
-  sudo docker logs meteor --since 2s >> ~/app.log
-  echo "\n" >> ~/app.log
+  sudo docker logs meteor --since 2s >> /home/deploy/app.log
+  echo "\n" >> /home/deploy/app.log
   sleep 2s
 done

@@ -4,7 +4,7 @@ set -e
 echo ""
 echo "====> Creating Swap memory for compilation..."
 echo ""
-sh ~/script/createSwapMemory.sh > /dev/null
+sh /home/deploy/script/createSwapMemory.sh > /dev/null
 
 # Install things
 echo ""
@@ -29,4 +29,4 @@ curl https://install.meteor.com/ 2>/dev/null | sh
 echo ""
 echo "====> Installing Docker..."
 echo ""
-sh ~/script/installDocker.sh > /dev/null
+sh /home/deploy/script/installDocker.sh > /dev/null

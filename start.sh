@@ -2,11 +2,11 @@
 set -e
 
 # Go to compiled app
-# cd ~/compiled/bundle
+# cd /home/deploy/compiled/bundle
 # Set port
 # export PORT=80
 # Run app
-# nohup sudo -E meteor node main.js > ~/app.log 2>&1&
+# nohup sudo -E meteor node main.js > /home/deploy/app.log 2>&1&
 
 echo ""
 echo "====> Starting Meteor Docker Image..."
@@ -14,8 +14,8 @@ echo ""
 
 sudo docker run -d \
   --restart=always \
-  --env-file ~/.env \
-  -v ~/bundle:/bundle \
+  --env-file /home/deploy/.env \
+  -v /home/deploy/bundle:/bundle \
   -p 80:80 \
   --name=meteor \
   abernix/meteord:base
@@ -38,8 +38,8 @@ echo ""
 
 sleep 5s
 
-nohup sh ~/script/pipeLogs.sh > /dev/null 2>&1 &
-nohup sh ~/loggerDaemon.sh > /dev/null 2>&1 &
+nohup sh /home/deploy/script/pipeLogs.sh > /dev/null 2>&1 &
+nohup sh /home/deploy/loggerDaemon.sh > /dev/null 2>&1 &
 
 echo ""
 echo "====> Logs started"
