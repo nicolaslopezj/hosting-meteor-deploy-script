@@ -8,17 +8,23 @@
     },
     {
       "key": "ROOT_URL",
-      "description": "http://appname.apps.orion.hosting",
+      "description": "The URL that clients will be accessing your application with",
       "defaultValue": "http://appname.apps.orion.hosting"
     },
     {
       "key": "MONGO_URL",
-      "description": "URL for the Mongo Database",
+      "description": "URL for connecting to Mongo",
       "defaultValue": "mongodb://localhost:27017/meteor"
     },
     {
+      "key": "MONGO_OPLOG_URL",
+      "description": "URL for connecting to Mongo with Oplog. Optional",
+      "defaultValue": "mongodb://localhost:27017/meteor",
+      "optional": true
+    },
+    {
       "key": "MAIL_URL",
-      "description": "URL to send the emails",
+      "description": "How Meteor will send email, SMTP settings. Optional",
       "defaultValue": "smtp://xx.com",
       "optional": true
     },
