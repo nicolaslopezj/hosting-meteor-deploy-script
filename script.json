@@ -1,3 +1,30 @@
 {
-  "language": "Meteor"
+  "language": "Meteor",
+  "envVars": [
+    {
+      "key": "APP_LOCATION",
+      "description": "asdfas",
+      "defaultValue": "."
+    },
+    {
+      "key": "ROOT_URL",
+      "description": "http://appname.apps.orion.hosting",
+      "defaultValue": "http://appname.apps.orion.hosting"
+    },
+    {
+      "key": "MONGO_URL",
+      "description": "URL for the Mongo Database",
+      "defaultValue": "mongodb://localhost:27017/meteor"
+    },
+    {
+      "key": "EMAIL_URL",
+      "description": "URL to send the emails",
+      "defaultValue": "smtp://xx.com"
+    },
+    {
+      "key": "METEOR_SETTINGS",
+      "description": "Meteor settings JSON",
+      "defaultValue": "{}"
+    }
+  ]
 }
