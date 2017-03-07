@@ -3,7 +3,7 @@
   "envVars": [
     {
       "key": "APP_LOCATION",
-      "description": "asdfas",
+      "description": "The location of the Meteor app folder in the repository. Set \".\" for root",
       "defaultValue": "."
     },
     {
