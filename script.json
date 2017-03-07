@@ -17,9 +17,10 @@
       "defaultValue": "mongodb://localhost:27017/meteor"
     },
     {
-      "key": "EMAIL_URL",
+      "key": "MAIL_URL",
       "description": "URL to send the emails",
-      "defaultValue": "smtp://xx.com"
+      "defaultValue": "smtp://xx.com",
+      "optional": true
     },
     {
       "key": "METEOR_SETTINGS",
