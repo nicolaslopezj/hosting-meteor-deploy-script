@@ -9,7 +9,7 @@
     {
       "key": "ROOT_URL",
       "description": "The URL that clients will be accessing your application with",
-      "defaultValue": "http://appname.apps.orion.hosting"
+      "defaultValue": "http://${app:name}.apps.orion.hosting"
     },
     {
       "key": "MONGO_URL",
@@ -25,7 +25,7 @@
     {
       "key": "MAIL_URL",
       "description": "How Meteor will send email, SMTP settings. Optional",
-      "defaultValue": "smtp://xx.com",
+      "defaultValue": "",
       "optional": true
     },
     {
