@@ -18,10 +18,10 @@ sudo docker run -d \
   -v /home/deploy/bundle:/bundle \
   -p 80:80 \
   --name=meteor \
-  abernix/meteord:base
+  $DOCKER_IMAGE
 
 echo ""
-echo "====> Started abernix/meteord:base"
+echo "====> Started $DOCKER_IMAGE"
 echo ""
 
 echo ""
