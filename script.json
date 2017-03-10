@@ -32,6 +32,11 @@
       "key": "METEOR_SETTINGS",
       "description": "Meteor settings JSON",
       "defaultValue": "{}"
+    },
+    {
+      "key": "DOCKER_IMAGE",
+      "description": "Choose a docker image to run your Meteor app. abernix/meteord:base is recommended",
+      "defaultValue": "abernix/meteord:base"
     }
   ]
 }
