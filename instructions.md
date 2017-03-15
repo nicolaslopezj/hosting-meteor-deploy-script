@@ -1,5 +1,3 @@
-# Meteor Hosting
+Meteor deploy for Orion Hosting
 
-## Instructions
-
-- Configure MongoDB and save a MONGO_URL.
+Use small server at least
