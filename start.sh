@@ -21,10 +21,10 @@ sudo docker run -d \
   -v /home/deploy/bundle:/bundle \
   -p 80:80 \
   --name=meteor \
-  abernix/meteord:base
+  $DOCKER_IMAGE
 
 echo ""
-echo "====> Started abernix/meteord:base"
+echo "====> Started $DOCKER_IMAGE"
 echo ""
 
 echo ""
@@ -42,7 +42,6 @@ echo ""
 sleep 5s
 
 nohup sh /home/deploy/script/pipeLogs.sh > /dev/null 2>&1 &
-nohup sh /home/deploy/loggerDaemon.sh > /dev/null 2>&1 &
 
 echo ""
 echo "====> Logs started"

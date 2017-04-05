@@ -1,0 +1,42 @@
+{
+  "language": "Meteor",
+  "envVars": [
+    {
+      "key": "APP_LOCATION",
+      "description": "The location of the Meteor app folder in the repository. Set \".\" for root",
+      "defaultValue": "."
+    },
+    {
+      "key": "ROOT_URL",
+      "description": "The URL that clients will be accessing your application with",
+      "defaultValue": "http://${app:name}.apps.orion.hosting"
+    },
+    {
+      "key": "MONGO_URL",
+      "description": "URL for connecting to Mongo",
+      "defaultValue": "mongodb://localhost:27017/meteor"
+    },
+    {
+      "key": "MONGO_OPLOG_URL",
+      "description": "URL for connecting to Mongo with Oplog. Optional",
+      "defaultValue": "",
+      "optional": true
+    },
+    {
+      "key": "MAIL_URL",
+      "description": "How Meteor will send email, SMTP settings. Optional",
+      "defaultValue": "",
+      "optional": true
+    },
+    {
+      "key": "METEOR_SETTINGS",
+      "description": "Meteor settings JSON",
+      "defaultValue": "{}"
+    },
+    {
+      "key": "DOCKER_IMAGE",
+      "description": "Choose a docker image to run your Meteor app. abernix/meteord:base is recommended",
+      "defaultValue": "abernix/meteord:base"
+    }
+  ]
+}
