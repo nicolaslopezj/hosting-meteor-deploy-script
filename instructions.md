@@ -4,4 +4,4 @@ Follow this tutorial for help http://help.orion.hosting/hosting-meteor/deploying
 
 Check how to setup a MongoDB providers here http://help.orion.hosting/hosting-meteor/setup-a-mongodb-provider
 
-512mb servers may fail deploys with "Killed" message, please use 1GB servers at least.
+512MB servers may fail deploys with "Killed" message, please use 1GB servers at least.
