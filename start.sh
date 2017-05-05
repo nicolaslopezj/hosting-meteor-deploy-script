@@ -1,6 +1,5 @@
 #!/bin/sh
 set -e
-set -x
 
 echo ""
 echo "====> Starting Meteor Docker Image..."

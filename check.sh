@@ -1,6 +1,5 @@
 #!/bin/sh
 set -e
-set -x
 
 echo "Starting check deploy"
 
