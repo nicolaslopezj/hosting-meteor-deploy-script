@@ -28,9 +28,8 @@ echo ""
 echo "====> Starting app..."
 echo ""
 
-sleep 20s
-
-sudo docker logs meteor --tail=30
+sleep 30s
+sudo docker logs meteor --since 60s
 
 echo ""
 echo "====> App started"
