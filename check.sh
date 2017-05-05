@@ -4,7 +4,9 @@ set -e
 DEPLOY_CHECK_PORT=80
 DEPLOY_CHECK_WAIT_TIME=60
 elaspsed=0
+
 while [[ true ]]; do
+  echo "Check deploy"
   sudo docker logs meteor --since 1s
   sleep 1
   elaspsed=$((elaspsed+1))

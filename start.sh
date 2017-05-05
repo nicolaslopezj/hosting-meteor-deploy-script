@@ -28,9 +28,11 @@ echo ""
 echo "====> Starting app..."
 echo ""
 
+echo "Getting logs..."
 sudo docker logs meteor --tail=30
-sh /home/deploy/script/check.sh
 
+echo "Checking deploy..."
+sh /home/deploy/script/check.sh
 
 echo ""
 echo "====> App started"
