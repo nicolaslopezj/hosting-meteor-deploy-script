@@ -27,6 +27,7 @@ sudo docker logs meteor --tail=30
 
 echo "Checking deploy..."
 sh /home/deploy/script/check.sh
+sudo docker logs meteor
 
 echo ""
 echo "====> App started"
