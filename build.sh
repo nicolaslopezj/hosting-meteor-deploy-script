@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+sh /home/deploy/script/prepare.sh
+
 # Go to app folder
 cd app
 cd $APP_LOCATION # Add an if here

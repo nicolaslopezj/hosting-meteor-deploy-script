@@ -1,9 +1,6 @@
 #!/bin/sh
 set -e
 
-sh /home/deploy/script/prepare.sh
-sh /home/deploy/script/build.sh
-
 # Go to compiled app
 # cd /home/deploy/compiled/bundle
 # Set port
