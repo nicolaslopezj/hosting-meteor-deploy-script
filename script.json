@@ -9,7 +9,7 @@
     {
       "key": "ROOT_URL",
       "description": "The URL that clients will be accessing your application with",
-      "defaultValue": "http://${app:name}.apps.orion.hosting"
+      "defaultValue": "http://${app:name}.orionapps.org"
     },
     {
       "key": "MONGO_URL",
