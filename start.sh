@@ -28,9 +28,7 @@ echo ""
 echo "====> Starting app..."
 echo ""
 
-sleep 20s
-
-sudo docker logs meteor --tail=30
+sh /home/deploy/script/check.sh
 
 echo ""
 echo "====> App started"
