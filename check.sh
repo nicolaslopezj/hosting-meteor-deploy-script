@@ -4,7 +4,7 @@ set -e
 echo "Starting check deploy"
 
 DEPLOY_CHECK_PORT=80
-DEPLOY_CHECK_WAIT_TIME=60
+DEPLOY_CHECK_WAIT_TIME="60"
 elaspsed=0
 
 while true; do
