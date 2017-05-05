@@ -1,5 +1,8 @@
 #!/bin/sh
 set -e
+set -x
+
+echo "Starting check deploy"
 
 DEPLOY_CHECK_PORT=80
 DEPLOY_CHECK_WAIT_TIME=60

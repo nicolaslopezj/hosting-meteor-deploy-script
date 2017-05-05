@@ -1,12 +1,6 @@
 #!/bin/sh
 set -e
-
-# Go to compiled app
-# cd /home/deploy/compiled/bundle
-# Set port
-# export PORT=80
-# Run app
-# nohup sudo -E meteor node main.js > /home/deploy/app.log 2>&1&
+set -x
 
 echo ""
 echo "====> Starting Meteor Docker Image..."
