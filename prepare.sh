@@ -1,11 +1,6 @@
 #!/bin/sh
 set -e
 
-echo ""
-echo "====> Creating Swap memory for compilation..."
-echo ""
-sh /home/deploy/script/createSwapMemory.sh > /dev/null
-
 # Install things
 echo ""
 echo "====> Updating apt registry..."
