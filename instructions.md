@@ -4,4 +4,4 @@ Check the tutorial [Deploying a Meteor app](http://help.orion.hosting/hosting-me
 
 Check how to [setup a MongoDB providers](http://help.orion.hosting/hosting-meteor/setup-a-mongodb-provider)
 
-**512MB servers may fail deploys with "Killed" message, please use 1GB servers at least.**
+**512MB servers may cause deployment errors, try to use 1GB servers at least.**
