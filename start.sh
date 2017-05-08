@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+sh /home/deploy/script/createSwapMemory.sh
+
 echo ""
 echo "====> Starting Meteor Docker Image..."
 echo ""
