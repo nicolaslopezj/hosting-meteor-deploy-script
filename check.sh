@@ -4,12 +4,12 @@ set -e
 echo "Starting check deploy"
 
 DEPLOY_CHECK_PORT=80
-DEPLOY_CHECK_WAIT_TIME=60
+DEPLOY_CHECK_WAIT_TIME=12
 elaspsed=0
 
 while true; do
-  echo "Check deploy $elaspsed"
-  sleep 1
+  echo "Check deploy #$elaspsed..."
+  sleep 5
   elaspsed=$((elaspsed+1))
   curl --fail -L localhost:$DEPLOY_CHECK_PORT && exit 0
 
