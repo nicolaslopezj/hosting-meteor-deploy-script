@@ -19,16 +19,8 @@ echo ""
 echo "====> Started $DOCKER_IMAGE"
 echo ""
 
-echo ""
-echo "====> Starting app..."
-echo ""
-
-echo "Getting logs..."
-sudo docker logs meteor --tail=30
-
 echo "Checking deploy..."
 sh /home/deploy/script/check.sh
-sudo docker logs meteor
 
 echo ""
 echo "====> App started"
