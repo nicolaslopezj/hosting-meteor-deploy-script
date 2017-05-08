@@ -4,8 +4,8 @@ set -e
 echo "Starting check deploy"
 
 DEPLOY_CHECK_PORT=80
-DEPLOY_CHECK_WAIT_TIME=12
-elaspsed=0
+DEPLOY_CHECK_WAIT_TIME=13
+elaspsed=1
 
 while true; do
   echo "Check deploy #$elaspsed..."
