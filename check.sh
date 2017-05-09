@@ -15,7 +15,7 @@ while true; do
 
   if [ $elaspsed -ge $DEPLOY_CHECK_WAIT_TRIES ]; then
     echo "Error starting app"
-    sudo docker logs meteor --tail=150
+    sudo docker logs meteor --tail=100
     exit 1
   fi
 done
