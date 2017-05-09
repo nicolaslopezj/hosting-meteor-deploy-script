@@ -12,8 +12,10 @@ echo ""
 echo "====> Installing app npm dependencies..."
 echo ""
 export PYTHON="/usr/bin/python2.7"
+echo "Installing bcrypt..."
+meteor npm install --save bcrypt-nodejs && meteor npm uninstall --save bcrypt
+echo "Installing other npm deps"
 meteor npm install > /dev/null
-npm install --save bcrypt-nodejs && npm uninstall --save bcrypt
 
 # Build app
 # export METEOR_PROFILE=100
