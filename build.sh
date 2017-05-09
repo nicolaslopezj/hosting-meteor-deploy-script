@@ -13,6 +13,7 @@ echo "====> Installing app npm dependencies..."
 echo ""
 export PYTHON="/usr/bin/python2.7"
 meteor npm install > /dev/null
+meteor add npm-bcrypt@0.8.7
 
 # Build app
 # export METEOR_PROFILE=100
