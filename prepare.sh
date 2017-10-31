@@ -21,6 +21,14 @@ echo ""
 export HOME=/home/ubuntu
 curl https://install.meteor.com/ 2>/dev/null | sh
 
+# Install Yarn
+echo ""
+echo "====> Installing Yarn..."
+echo ""
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
+
 # Install docker
 echo ""
 echo "====> Installing Docker..."
