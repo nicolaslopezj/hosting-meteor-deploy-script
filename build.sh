@@ -12,7 +12,7 @@ echo ""
 echo "====> Installing app npm dependencies..."
 echo ""
 export PYTHON="/usr/bin/python2.7"
-meteor npm install > /dev/null
+yarn install > /dev/null
 
 # Build app
 # export METEOR_PROFILE=100
