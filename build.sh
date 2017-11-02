@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-FINAL_DOCKER_IMAGE=$(sh ./getDockerImage.sh)
+FINAL_DOCKER_IMAGE=$(sh /home/deploy/script/getDockerImage.sh)
 echo "Using docker image \"$FINAL_DOCKER_IMAGE\""
 
 sh /home/deploy/script/prepare.sh
