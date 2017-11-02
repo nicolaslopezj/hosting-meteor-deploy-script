@@ -1,6 +1,5 @@
 #!/bin/sh
 
-METEOR_VERSION=$(cat ./.meteor/release)
 # DOCKER_IMAGE="user set docker image"
 
 pwd
@@ -17,6 +16,7 @@ fi
 pwd
 ls
 
+METEOR_VERSION=$(cat ./.meteor/release)
 
 METEOR_DOCKER_1_6="mrauhu/meteord:node-8.4.0-base"
 METEOR_DOCKER_1_5="abernix/meteord:base"
