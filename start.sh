@@ -3,7 +3,7 @@ set -e
 
 sh /home/deploy/script/createSwapMemory.sh
 
-FINAL_DOCKER_IMAGE=$(sh /home/deploy/script/getDockerImage.sh)
+FINAL_DOCKER_IMAGE=$(bash /home/deploy/script/getDockerImage.sh)
 echo "Starting meteor with \"$FINAL_DOCKER_IMAGE\""
 
 echo ""
@@ -16,10 +16,10 @@ sudo docker run -d \
   -v /home/deploy/bundle:/bundle \
   -p 80:80 \
   --name=meteor \
-  $DOCKER_IMAGE
+  $FINAL_DOCKER_IMAGE
 
 echo ""
-echo "====> Started $DOCKER_IMAGE"
+echo "====> Started $FINAL_DOCKER_IMAGE"
 echo ""
 
 echo "Checking deploy..."

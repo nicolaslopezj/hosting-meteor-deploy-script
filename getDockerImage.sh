@@ -1,12 +1,17 @@
-#!/bin/sh
+#!/bin/bash
 
 # DOCKER_IMAGE="user set docker image"
 
 # Go to app folder
 cd /home/deploy/app
-cd $APP_LOCATION
+# cd $APP_LOCATION
+
+if [[ "$APP_LOCATION" != "" ]]; then
+  cd $APP_LOCATION
+fi
 
 METEOR_VERSION=$(cat ./.meteor/release)
+# METEOR_VERSION="METEOR@1.5"
 
 METEOR_DOCKER_1_6="mrauhu/meteord:node-8.4.0-base"
 METEOR_DOCKER_1_5="abernix/meteord:base"
