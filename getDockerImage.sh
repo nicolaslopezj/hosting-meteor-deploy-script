@@ -4,7 +4,9 @@
 
 # Go to app folder
 cd /home/deploy/app
-cd $APP_LOCATION
+if [[ "$APP_LOCATION" != "" ]]; then
+  cd $APP_LOCATION
+fi
 
 METEOR_VERSION=$(cat ./.meteor/release)
 
