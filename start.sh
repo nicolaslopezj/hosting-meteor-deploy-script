@@ -16,10 +16,10 @@ sudo docker run -d \
   -v /home/deploy/bundle:/bundle \
   -p 80:80 \
   --name=meteor \
-  $DOCKER_IMAGE
+  $FINAL_DOCKER_IMAGE
 
 echo ""
-echo "====> Started $DOCKER_IMAGE"
+echo "====> Started $FINAL_DOCKER_IMAGE"
 echo ""
 
 echo "Checking deploy..."
