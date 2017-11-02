@@ -1,11 +1,17 @@
 #!/bin/sh
 set -e
 
+FINAL_DOCKER_IMAGE=$(sh ./getDockerImage.sh)
+echo "Using docker image \"$FINAL_DOCKER_IMAGE\""
+
 sh /home/deploy/script/prepare.sh
+
 
 # Go to app folder
 cd app
-cd $APP_LOCATION # Add an if here
+if [[ "$APP_LOCATION" != "" ]]; then
+  cd $APP_LOCATION
+fi
 
 # Install NPM Deps
 echo ""
