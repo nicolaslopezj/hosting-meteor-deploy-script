@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+echo "Auto detected script"
+
 DETECTED_METEOR_VERSION=$(sh /home/deploy/script/getMeteorVersion.sh)
 echo "Detected Meteor version \"$DETECTED_METEOR_VERSION\""
 
