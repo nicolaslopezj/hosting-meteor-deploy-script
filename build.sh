@@ -3,10 +3,10 @@ set -e
 
 echo "Auto detected script"
 
-DETECTED_METEOR_VERSION=$(sh /home/deploy/script/getMeteorVersion.sh)
+DETECTED_METEOR_VERSION=$(bash /home/deploy/script/getMeteorVersion.sh)
 echo "Detected Meteor version \"$DETECTED_METEOR_VERSION\""
 
-FINAL_DOCKER_IMAGE=$(sh /home/deploy/script/getDockerImage.sh)
+FINAL_DOCKER_IMAGE=$(bash /home/deploy/script/getDockerImage.sh)
 echo "Using docker image \"$FINAL_DOCKER_IMAGE\""
 
 sh /home/deploy/script/prepare.sh

@@ -3,7 +3,7 @@ set -e
 
 sh /home/deploy/script/createSwapMemory.sh
 
-FINAL_DOCKER_IMAGE=$(sh /home/deploy/script/getDockerImage.sh)
+FINAL_DOCKER_IMAGE=$(bash /home/deploy/script/getDockerImage.sh)
 echo "Starting meteor with \"$FINAL_DOCKER_IMAGE\""
 
 echo ""
