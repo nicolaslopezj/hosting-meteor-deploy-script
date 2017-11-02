@@ -3,12 +3,12 @@ set -e
 
 sh /home/deploy/script/createSwapMemory.sh
 
+FINAL_DOCKER_IMAGE=$(sh /home/deploy/script/getDockerImage.sh)
+echo "Starting meteor with \"$FINAL_DOCKER_IMAGE\""
+
 echo ""
 echo "====> Starting Meteor Docker Image..."
 echo ""
-
-FINAL_DOCKER_IMAGE=$(sh /home/deploy/script/getDockerImage.sh)
-echo "Starting meteor with \"$FINAL_DOCKER_IMAGE\""
 
 sudo docker run -d \
   --restart=always \
