@@ -18,6 +18,8 @@ ls
 
 METEOR_VERSION=$(cat ./.meteor/release)
 
+echo "Meteor version found $METEOR_VERSION"
+
 METEOR_DOCKER_1_6="mrauhu/meteord:node-8.4.0-base"
 METEOR_DOCKER_1_5="abernix/meteord:base"
 METEOR_DOCKER_1_4="abernix/meteord:base"
