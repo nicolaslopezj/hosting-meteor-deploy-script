@@ -9,6 +9,8 @@ ls
 cd /home/deploy/app
 pwd
 ls
+
+echo "App location $APP_LOCATION"
 if [[ "$APP_LOCATION" != "" ]]; then
   cd $APP_LOCATION
 fi
