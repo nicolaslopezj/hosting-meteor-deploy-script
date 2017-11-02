@@ -3,11 +3,19 @@
 METEOR_VERSION=$(cat ./.meteor/release)
 # DOCKER_IMAGE="user set docker image"
 
+pwd
+ls
+
 # Go to app folder
-cd /home/deploy/code/app
+cd /home/deploy/code
+pwd
+ls
 if [[ "$APP_LOCATION" != "" ]]; then
   cd $APP_LOCATION
 fi
+
+pwd
+ls
 
 
 METEOR_DOCKER_1_6="mrauhu/meteord:node-8.4.0-base"
