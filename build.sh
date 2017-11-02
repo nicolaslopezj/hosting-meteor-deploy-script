@@ -9,9 +9,7 @@ sh /home/deploy/script/prepare.sh
 
 # Go to app folder
 cd app
-if [[ "$APP_LOCATION" != "" ]]; then
-  cd $APP_LOCATION
-fi
+cd $APP_LOCATION
 
 # Install NPM Deps
 echo ""

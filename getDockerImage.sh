@@ -2,21 +2,9 @@
 
 # DOCKER_IMAGE="user set docker image"
 
-pwd
-ls
-
 # Go to app folder
 cd /home/deploy/app
-pwd
-ls
-
-echo "App location $APP_LOCATION"
-if [[ "$APP_LOCATION" != "" ]]; then
-  cd $APP_LOCATION
-fi
-
-pwd
-ls
+cd $APP_LOCATION
 
 METEOR_VERSION=$(cat ./.meteor/release)
 
