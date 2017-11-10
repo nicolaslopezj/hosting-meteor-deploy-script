@@ -11,7 +11,7 @@ while true; do
   echo "Check deploy #$elaspsed..."
   sleep 5
   elaspsed=$((elaspsed+1))
-  curl --fail --head --insecure localhost:$DEPLOY_CHECK_PORT && exit 0
+  curl --fail --head --insecure --max-time 1 localhost:$DEPLOY_CHECK_PORT && exit 0
 
   if [ $elaspsed -ge $DEPLOY_CHECK_WAIT_TRIES ]; then
     echo "Error starting app"
