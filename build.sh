@@ -33,3 +33,9 @@ meteor build --architecture=os.linux.x86_64 /home/deploy/bundle --server-only --
 echo ""
 echo "====> App built"
 echo ""
+
+
+echo ""
+echo "====> Starting app"
+echo ""
+sh /home/deploy/script/start.sh
