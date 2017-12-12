@@ -13,7 +13,7 @@ fi
 METEOR_VERSION=$(cat ./.meteor/release)
 # METEOR_VERSION="METEOR@1.5"
 
-METEOR_DOCKER_1_6="mrauhu/meteord:node-8.4.0-base"
+METEOR_DOCKER_1_6="abernix/meteord:node-8.9.1-base"
 METEOR_DOCKER_1_5="abernix/meteord:base"
 METEOR_DOCKER_1_4="abernix/meteord:base"
 
