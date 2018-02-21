@@ -37,8 +37,12 @@ sleep 20s
 
 forever logs 0
 
+cat /home/deploy/app.log
+
 echo "Checking deploy..."
 sh /home/deploy/script/check.sh
+
+cat /home/deploy/app.log
 
 echo ""
 echo "====> App started"
