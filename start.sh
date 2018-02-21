@@ -22,7 +22,20 @@ cd /home/deploy/bundle/bundle
 
 echo "Varibales not exported"
 
-meteor node main.js
+meteor npm --global install forever
+
+echo "Forever installed"
+
+forever start \
+-c "meteor node" \
+-o /home/deploy/app.log \
+-e /home/deploy/app.log \
+-l /home/deploy/app.log \
+main.js
+
+forever list
+
+forever logs 0
 
 echo ""
 echo "====> App started"
