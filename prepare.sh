@@ -20,9 +20,3 @@ echo "====> Installing Meteor..."
 echo ""
 export HOME=/home/ubuntu
 curl https://install.meteor.com/ 2>/dev/null | sh
-
-# Install docker
-echo ""
-echo "====> Installing Docker..."
-echo ""
-sh /home/deploy/script/installDocker.sh > /dev/null

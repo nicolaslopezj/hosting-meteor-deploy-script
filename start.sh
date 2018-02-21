@@ -18,7 +18,9 @@ meteor npm install --production
 
 cd /home/deploy/bundle/bundle
 
-source /home/deploy/.env
+export $(cat /home/deploy/.env | xargs)
+
+echo "Varibales exported"
 
 meteor node main.js
 
