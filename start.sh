@@ -1,38 +1,26 @@
 #!/bin/sh
 set -e
 
+echo "Node version"
+meteor node -v
+
 sh /home/deploy/script/createSwapMemory.sh
 
-FINAL_DOCKER_IMAGE=$(bash /home/deploy/script/getDockerImage.sh)
-echo "Starting meteor with \"$FINAL_DOCKER_IMAGE\""
+cd /home/deploy/bundle
 
-echo ""
-echo "====> Starting Meteor Docker Image..."
-echo ""
+tar xf server.tar.gz
 
-sudo docker run -d \
-  --restart=always \
-  --env-file /home/deploy/.env \
-  -v /home/deploy/bundle:/bundle \
-  -p 80:80 \
-  --name=meteor \
-  $FINAL_DOCKER_IMAGE
+cd bundle/programs/server
 
-echo ""
-echo "====> Started $FINAL_DOCKER_IMAGE"
-echo ""
+meteor npm install --production
 
-echo "Checking deploy..."
-sh /home/deploy/script/check.sh
+cd /home/deploy/bundle/bundle
+
+source /home/deploy/.env
+
+meteor node main.js
+
 
 echo ""
 echo "====> App started"
-echo ""
-
-sleep 5s
-
-nohup sh /home/deploy/script/pipeLogs.sh > /dev/null 2>&1 &
-
-echo ""
-echo "====> Logs started"
 echo ""
