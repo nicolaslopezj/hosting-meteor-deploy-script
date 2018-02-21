@@ -22,12 +22,14 @@ cd /home/deploy/bundle/bundle
 
 echo "Varibales not exported"
 
-meteor npm install forever
+sudo apt-get install nodejs -y
+sudo apt-get install npm -y
+npm install -g forever
 
 echo "Forever installed"
 
 # eval $(egrep -v '^#' .env | xargs) \
-./node_modules/forever/bin/forever start \
+forever start \
 -c "meteor node" \
 -o /home/deploy/app.log \
 -e /home/deploy/app.log \
