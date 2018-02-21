@@ -18,12 +18,11 @@ meteor npm install --production
 
 cd /home/deploy/bundle/bundle
 
-export $(cat /home/deploy/.env | xargs)
+# export $(cat /home/deploy/.env | xargs)
 
-echo "Varibales exported"
+echo "Varibales not exported"
 
 meteor node main.js
-
 
 echo ""
 echo "====> App started"
