@@ -8,6 +8,8 @@ sh /home/deploy/script/createSwapMemory.sh
 
 cd /home/deploy/bundle
 
+ls
+
 tar xf server.tar.gz
 
 cd bundle/programs/server
