@@ -20,3 +20,22 @@ echo "====> Installing Meteor..."
 echo ""
 export HOME=/home/ubuntu
 curl https://install.meteor.com/ 2>/dev/null | sh
+
+# Install node
+echo ""
+echo "====> Installing Npm and node..."
+echo ""
+sudo apt-get install nodejs -y > /dev/null
+sudo apt-get install npm -y > /dev/null
+
+echo "NPM version"
+npm -v
+echo "Node version"
+node -v
+
+# Install node
+echo ""
+echo "====> Installing forever..."
+echo ""
+npm install -g forever
+echo "Forever installed"
