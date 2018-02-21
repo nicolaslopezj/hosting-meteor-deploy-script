@@ -26,6 +26,7 @@ echo ""
 echo "====> Installing Npm and node..."
 echo ""
 sudo apt-get install nodejs -y > /dev/null
+ln -s /usr/bin/nodejs /usr/bin/node
 sudo apt-get install npm -y > /dev/null
 
 echo "NPM version"
