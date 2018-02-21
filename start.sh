@@ -25,8 +25,7 @@ echo "Varibales not exported"
 forever start \
 -c "meteor node" \
 -o /home/deploy/app.log \
--e /home/deploy/app.log \
--l /home/deploy/app.log \
+-e /home/deploy/appe.log \
 main.js
 
 forever list
