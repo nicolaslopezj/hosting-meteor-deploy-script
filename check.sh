@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+sleep 20s
+
 echo "Starting check deploy"
 
 DEPLOY_CHECK_PORT=80
