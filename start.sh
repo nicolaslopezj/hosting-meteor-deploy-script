@@ -28,12 +28,16 @@ forever start \
 -e /home/deploy/appe.log \
 main.js
 
+echo "List"
 forever list
 
+echo "Logs 1"
 forever logs 0
 
+echo "Sleep"
 sleep 20s
 
+echo "Logs 2"
 forever logs 0
 
 cat /home/deploy/app.log
