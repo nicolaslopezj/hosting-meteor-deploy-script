@@ -22,8 +22,8 @@ echo ""
 echo "====> Started $FINAL_DOCKER_IMAGE"
 echo ""
 
-echo "Checking deploy..."
-sh /home/deploy/script/check.sh
+echo "Not checking deploy..."
+# sh /home/deploy/script/check.sh
 
 echo ""
 echo "====> App started"
